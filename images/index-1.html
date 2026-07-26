@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>لمسة | LAMSA — Handmade Elegance</title>
+<meta name="description" content="لمسة — شنط نسائية يدوية فاخرة من الكروشيه والخرز واللؤلؤ. كل شنطة تحكي قصة.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <div class="logo">لمسة<span>LAMSA · HANDMADE BAGS</span></div>
+    <nav class="nav-links">
+      <a href="#shop">تسوّقي</a>
+      <a href="#categories">الأقسام</a>
+      <a href="about.html">قصتنا</a>
+      <a href="#reviews">آراء العميلات</a>
+      <a href="contact.html">تواصلي معنا</a>
+    </nav>
+    <div class="nav-actions">
+      <span class="lang-switch">EN</span>
+      <button class="icon-btn" onclick="openDrawer('fav')">♡<span class="badge" id="fav-badge">0</span></button>
+      <button class="icon-btn" onclick="openDrawer('cart')">🛍️<span class="badge" id="cart-badge">0</span></button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div>
+      <span class="eyebrow">حِرفة يدوية أصيلة</span>
+      <h1>كل شنطة في لمسة<br>تحكي قصة من الإبداع</h1>
+      <p>منسوجة يدويًا من خيوط الكروشيه وكنافا البلاستيك والخرز الكريستالي واللؤلؤ — كل قطعة من لمسة تأخذ ساعات من الغرز، وتحمل بصمة يد صانعتها.</p>
+      <div class="hero-cta">
+        <a href="#shop" class="btn btn-primary">تسوقي الآن</a>
+        <a href="#categories" class="btn btn-ghost">اكتشفي المجموعة</a>
+      </div>
+      <div class="stats">
+        <div class="stat"><b>+2,400</b><span>عميلة سعيدة</span></div>
+        <div class="stat"><b>100%</b><span>صناعة يدوية</span></div>
+        <div class="stat"><b>+12</b><span>ساعة عمل لكل شنطة</span></div>
+      </div>
+    </div>
+    <div class="hero-media">
+      <div class="frame"><img src="images/bag-pink-hero.png" alt="حقيبة لمسة الوردية"></div>
+      <div class="tag"><span class="dot"></span> الأكثر مبيعًا هذا الأسبوع</div>
+    </div>
+  </section>
+
+  <div class="stitch"></div>
+
+  <!-- CATEGORIES -->
+  <section id="categories">
+    <div class="section-head">
+      <span class="eyebrow">تسوقي حسب الفئة</span>
+      <h2>اختاري شنطتك المميزة</h2>
+      <p>كل فئة عندنا بتحكي أسلوب مختلف في الغزل والتطريز</p>
+    </div>
+    <div class="cats">
+      <a href="#shop" class="cat-card">
+        <img src="images/bag-pink.png" alt="كروشيه">
+        <div class="label"><h3>كروشيه ملوّن</h3><span>غزل يدوي بخيوط ناعمة</span></div>
+      </a>
+      <a href="#shop" class="cat-card">
+        <img src="images/bag-brown.png" alt="مطرزة">
+        <div class="label"><h3>مطرزة باللمسات الذهبية</h3><span>تفاصيل معدنية فاخرة</span></div>
+      </a>
+      <a href="#shop" class="cat-card">
+        <img src="images/bag-pink-hero.png" alt="إصدار محدود">
+        <div class="label"><h3>إصدار محدود</h3><span>قطع لا تتكرر</span></div>
+      </a>
+    </div>
+  </section>
+
+  <!-- SHOP -->
+  <section id="shop">
+    <div class="shop-strip">
+      <div>
+        <span class="eyebrow">التشكيلة</span>
+        <h2 style="font-size:32px;margin-top:12px;">شنط يدوية... تُلفت الأنظار</h2>
+      </div>
+      <div class="filters">
+        <button class="active">الكل</button>
+        <button>كروشيه</button>
+        <button>مطرزة</button>
+      </div>
+    </div>
+    <div class="grid-products">
+
+      <div class="product-card">
+        <div class="product-media">
+          <img src="images/bag-pink-hero.png" alt="حقيبة لمسة الوردية">
+          <button class="product-fav" onclick="toggleFavorite('p1', this)">♡</button>
+          <span class="product-pill">الأكثر مبيعًا</span>
+        </div>
+        <div class="product-info">
+          <h3>حقيبة لمسة الوردية</h3>
+          <p class="desc">منسوجة يدويًا بخيوط الكروشيه الوردية مع حلقات وسلسلة ذهبية</p>
+          <div class="product-row">
+            <span class="price">450 <small>ج.م</small></span>
+            <button class="add-btn" onclick="addToCart('p1')">أضيفي للسلة</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-media">
+          <img src="images/bag-brown.png" alt="حقيبة لمسة الغزال">
+          <button class="product-fav" onclick="toggleFavorite('p2', this)">♡</button>
+          <span class="product-pill">إصدار محدود</span>
+        </div>
+        <div class="product-info">
+          <h3>حقيبة لمسة الغزال</h3>
+          <p class="desc">نسيج بني مطرز بخيوط ذهبية مع دلاية غزال وسلسلة معدنية فاخرة</p>
+          <div class="product-row">
+            <span class="price">350 <small>ج.م</small></span>
+            <button class="add-btn" onclick="addToCart('p2')">أضيفي للسلة</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- LIMITED COLLECTION -->
+  <section>
+    <div class="limited">
+      <div>
+        <span class="eyebrow" style="color:#E8A9BC;">تشكيلة محدودة — لفترة قصيرة</span>
+        <h2>قطع مطرزة باللؤلؤ والكريستال، عدد محدود من كل تصميم</h2>
+        <p>لما تخلص، تخلص. كل تصميم بيتعمل بعدد قطع محدود، ولما ينفد مش بيترجع تاني.</p>
+        <div class="countdown" id="countdown">
+          <div class="box"><b id="cd-d">03</b><span>يوم</span></div>
+          <div class="box"><b id="cd-h">00</b><span>ساعة</span></div>
+          <div class="box"><b id="cd-m">00</b><span>دقيقة</span></div>
+          <div class="box"><b id="cd-s">00</b><span>ثانية</span></div>
+        </div>
+        <a href="#shop" class="btn btn-pink" style="margin-top:28px;">تسوقي المجموعة</a>
+      </div>
+      <div class="frame" style="border-radius:6px;overflow:hidden;">
+        <img src="images/bag-brown.png" alt="تشكيلة محدودة">
+      </div>
+    </div>
+  </section>
+
+  <div class="stitch stitch--dense"></div>
+
+  <!-- REVIEWS -->
+  <section id="reviews">
+    <div class="section-head">
+      <span class="eyebrow">بماذا تشعر عميلاتنا</span>
+      <h2>آراء حقيقية</h2>
+    </div>
+    <div class="reviews">
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>الشنطة أحلى من الصورة بكتير، والخامة تحفة والخياطة نضيفة جدًا. هتبقى مش آخر مرة أطلب.</p>
+        <div class="reviewer"><div class="avatar">س</div><div><b>سارة أحمد</b><span>عميلة موثقة</span></div></div>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>حبيت التفاصيل الذهبية والدلاية بتاعة الغزال، حاجة مختلفة عن أي حاجة عندي.</p>
+        <div class="reviewer"><div class="avatar">م</div><div><b>مروة سمير</b><span>عميلة موثقة</span></div></div>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>التوصيل كان سريع والتغليف حلو جدًا، حسيت إني بفتح هدية مش أوردر عادي.</p>
+        <div class="reviewer"><div class="avatar">ي</div><div><b>ياسمين علي</b><span>عميلة موثقة</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section>
+    <div class="newsletter">
+      <span class="eyebrow" style="color:#7a3c50;">كوني أول من يعلم</span>
+      <h2>تشكيلات جديدة، قطع محدودة، وعروض حصرية</h2>
+      <p>تصلك أولًا بأول على بريدك الإلكتروني</p>
+      <form class="news-form" onsubmit="newsletterSubmit(event)">
+        <input type="email" placeholder="بريدك الإلكتروني" required>
+        <button class="btn btn-primary" type="submit">اشتراك</button>
+      </form>
+      <div class="news-msg" id="news-msg"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="logo" style="align-items:flex-start;">لمسة<span>LAMSA · HANDMADE BAGS</span></div>
+        <p style="margin-top:16px;">شنط نسائية يدوية — كروشيه وخرز ولؤلؤ، بحب في كل قطعة.</p>
+        <div class="social">
+          <a href="#" title="انستجرام">IG</a>
+          <a href="#" title="تيك توك">TT</a>
+          <a href="#" title="فيسبوك">FB</a>
+        </div>
+      </div>
+      <div>
+        <h4>تسوقي</h4>
+        <ul>
+          <li><a href="#shop">وصل حديثًا</a></li>
+          <li><a href="#shop">الأكثر مبيعًا</a></li>
+          <li><a href="#shop">إصدار محدود</a></li>
+          <li><a href="#categories">كل الأقسام</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>الدعم</h4>
+        <ul>
+          <li><a href="contact.html#faq">الأسئلة الشائعة</a></li>
+          <li><a href="contact.html">الشحن والإرجاع</a></li>
+          <li><a href="contact.html">تواصلي معنا</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>الشركة</h4>
+        <ul>
+          <li><a href="about.html">قصتنا</a></li>
+          <li><a href="contact.html">سياسة الخصوصية</a></li>
+          <li><a href="contact.html">الشروط والأحكام</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 لمسة. جميع الحقوق محفوظة.</span>
+      <span>Handmade Elegance — Every Stitch Tells a Story</span>
+    </div>
+  </div>
+</footer>
+
+<!-- CART DRAWER -->
+<div class="drawer" id="cart-drawer">
+  <div class="drawer-head"><h3>سلة التسوق</h3><button class="drawer-close" onclick="closeDrawers()">✕</button></div>
+  <div class="drawer-body" id="cart-body"></div>
+  <div class="drawer-foot" id="cart-foot" style="display:none;">
+    <div class="row"><span>الإجمالي</span><span id="cart-total">0 ج.م</span></div>
+    <button class="btn btn-primary btn-full" onclick="checkoutDemo()">إتمام الشراء</button>
+  </div>
+</div>
+
+<!-- FAVORITES DRAWER -->
+<div class="drawer" id="fav-drawer">
+  <div class="drawer-head"><h3>المفضلة</h3><button class="drawer-close" onclick="closeDrawers()">✕</button></div>
+  <div class="drawer-body" id="fav-body"></div>
+</div>
+
+<div class="overlay" id="overlay" onclick="closeDrawers()"></div>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>تواصلي معنا | LAMSA — Contact</title>
+<meta name="description" content="لمسة — شنط نسائية يدوية فاخرة من الكروشيه والخرز واللؤلؤ. كل شنطة تحكي قصة.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Tajawal:wght@300;400;500;700;900&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header id="header">
+  <div class="wrap nav-inner">
+    <div class="logo" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+      <span class="mark">لمسة</span>
+      <span class="sub" data-en="LAMSA">LAMSA</span>
+    </div>
+    <nav class="links">
+      <a href="index.html#shop" data-en="Shop">تسوّقي</a>
+      <a href="index.html#categories" data-en="Categories">الأقسام</a>
+      <a href="about.html" data-en="Our Story">قصتنا</a>
+      <a href="index.html#reviews" data-en="Reviews">آراء العميلات</a>
+      <a href="#contact" data-en="Contact">تواصلي معنا</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="lang-btn" id="langBtn" onclick="toggleLang()">EN</button>
+      <button class="icon-btn" onclick="toggleWishPanel()" aria-label="wishlist">
+        <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6" fill="none"><path d="M12 21s-7.5-4.7-10-9.3C.5 8 2 4 6 4c2.2 0 3.7 1.2 4.5 2.6C11.3 5.2 12.8 4 15 4c4 0 5.5 4 3.5 7.7C19.5 16.3 12 21 12 21z"/></svg>
+        <span class="badge" id="wishCount">0</span>
+      </button>
+      <button class="icon-btn" onclick="toggleCart()" aria-label="cart">
+        <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6" fill="none"><path d="M6 8h12l-1 12H7L6 8z"/><path d="M9 8V6a3 3 0 016 0v2"/></svg>
+        <span class="badge" id="cartCount">0</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+
+<!-- ================= FAQ ================= -->
+<section class="section tight" id="faq">
+  <div class="wrap" style="max-width:760px;">
+    <div class="sec-head reveal">
+      <div class="eyebrow" data-en="Good to Know">جيد أن تعرفي</div>
+      <h2 data-en="Frequently Asked Questions">الأسئلة الشائعة</h2>
+    </div>
+    <div id="faqList" class="reveal"></div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="section" id="contact" style="background:var(--thread-cream);">
+  <div class="wrap contact-grid">
+    <div class="contact-info reveal">
+      <div class="eyebrow" data-en="Get in Touch">تواصلي معنا</div>
+      <h2 style="font-family:'Aref Ruqaa',serif; font-size:1.9rem; margin:12px 0 18px;" data-en="We'd Love to Hear From You">يسعدنا تواصلك معنا</h2>
+
+      <div class="c-row">
+        <div class="c-icon"><svg viewBox="0 0 24 24" stroke-width="1.6"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1.9.3 1.8.6 2.7a2 2 0 01-.4 2.1L8 9.9a16 16 0 006 6l1.4-1.4a2 2 0 012.1-.4c.9.3 1.8.5 2.7.6a2 2 0 011.8 2.2z"/></svg></div>
+        <div><b data-en="Phone / WhatsApp">الهاتف / واتساب</b><a href="tel:+966500000000">+966 5X XXX XXXX</a></div>
+      </div>
+      <div class="c-row">
+        <div class="c-icon"><svg viewBox="0 0 24 24" stroke-width="1.6"><path d="M4 4h16v16H4z"/><path d="M22 6l-10 7L2 6"/></svg></div>
+        <div><b data-en="Email">البريد الإلكتروني</b><a href="mailto:hello@lamsa-bags.com">hello@lamsa-bags.com</a></div>
+      </div>
+      <div class="c-row">
+        <div class="c-icon"><svg viewBox="0 0 24 24" stroke-width="1.6"><path d="M12 21s-7-4.5-7-10a7 7 0 0114 0c0 5.5-7 10-7 10z"/><circle cx="12" cy="11" r="2.4"/></svg></div>
+        <div><b data-en="Studio">الورشة</b><span data-en="Riyadh, Saudi Arabia — visits by appointment">الرياض، المملكة العربية السعودية — بالمواعيد فقط</span></div>
+      </div>
+      <div class="c-row">
+        <div class="c-icon"><svg viewBox="0 0 24 24" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
+        <div><b data-en="Working Hours">ساعات العمل</b><span data-en="Sat–Thu, 10am – 8pm">السبت – الخميس، ١٠ص – ٨م</span></div>
+      </div>
+
+      <div class="social-row">
+        <a class="social-btn" href="#" title="Instagram">IG</a>
+        <a class="social-btn" href="#" title="TikTok">TT</a>
+        <a class="social-btn" href="#" title="Snapchat">SC</a>
+        <a class="social-btn" href="#" title="Facebook">FB</a>
+        <a class="social-btn" href="#" title="Pinterest">PT</a>
+      </div>
+    </div>
+
+    <form class="contact-form reveal" onsubmit="event.preventDefault(); showToast(lang==='ar' ? 'تم إرسال رسالتك، سنعاود التواصل معك قريبًا ✦' : 'Message sent — we will reply soon ✦'); this.reset();">
+      <input type="text" required placeholder="الاسم الكامل" data-en-placeholder="Full name">
+      <input type="tel" placeholder="رقم الجوال" data-en-placeholder="Phone number">
+      <input type="email" required placeholder="البريد الإلكتروني" data-en-placeholder="Email address">
+      <textarea required placeholder="رسالتك..." data-en-placeholder="Your message..."></textarea>
+      <button type="submit" class="btn btn-primary" data-en="Send Message">إرسال الرسالة</button>
+    </form>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <span class="mark">لمسة</span>
+        <p data-en="Handmade women's bags — crochet, beads and pearls, stitched with love in every piece.">شنط نسائية يدوية — كروشيه وخرز ولؤلؤ، بحب في كل قطعة.</p>
+        <div class="social-row" style="margin-top:16px;">
+          <a class="social-btn" href="#">IG</a>
+          <a class="social-btn" href="#">TT</a>
+          <a class="social-btn" href="#">FB</a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h5 data-en="Shop">تسوقي</h5>
+        <ul>
+          <li><a href="index.html#shop" data-en="New Arrivals">وصل حديثًا</a></li>
+          <li><a href="index.html#shop" data-en="Best Sellers">الأكثر مبيعًا</a></li>
+          <li><a href="index.html#shop" data-en="Limited Edition">إصدار محدود</a></li>
+          <li><a href="index.html#categories" data-en="All Categories">كل الأقسام</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5 data-en="Support">الدعم</h5>
+        <ul>
+          <li><a href="#faq" data-en="FAQs">الأسئلة الشائعة</a></li>
+          <li><a href="#" data-en="Shipping">الشحن</a></li>
+          <li><a href="#" data-en="Returns">الإرجاع</a></li>
+          <li><a href="#contact" data-en="Contact Us">تواصلي معنا</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5 data-en="Company">الشركة</h5>
+        <ul>
+          <li><a href="about.html" data-en="Our Story">قصتنا</a></li>
+          <li><a href="#" data-en="Privacy Policy">سياسة الخصوصية</a></li>
+          <li><a href="#" data-en="Terms of Service">الشروط والأحكام</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span data-en="© 2026 LAMSA. All rights reserved.">© 2026 لمسة. جميع الحقوق محفوظة.</span>
+      <span data-en="Handmade Elegance — Every Stitch Tells a Story">Handmade Elegance — Every Stitch Tells a Story</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ================= FLOATING ================= -->
+<div class="float-stack">
+  <a class="float-btn wa" href="https://wa.me/966500000000" target="_blank" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 00-8.6 15L2 22l5.2-1.4A10 10 0 1012 2zm5.7 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.6-.6-2.9-1.3-4.8-4.2-4.9-4.4-.1-.2-1.2-1.6-1.2-3 0-1.4.7-2.1 1-2.4.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5.2.5.7 1.8.8 1.9.1.2.1.3 0 .5-.1.2-.1.3-.3.5-.1.2-.3.4-.4.5-.1.1-.3.3-.1.6.2.3.9 1.5 1.9 2.4 1.3 1.2 2.4 1.5 2.7 1.7.3.2.5.1.6-.1.2-.2.7-.8.9-1.1.2-.3.4-.2.6-.1.2.1 1.5.7 1.8.8.3.1.4.2.5.3.1.2.1.7-.1 1.4z"/></svg>
+  </a>
+  <a class="float-btn call" href="tel:+966500000000" aria-label="Call">
+    <svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1.9.3 1.8.6 2.7a2 2 0 01-.4 2.1L8 9.9a16 16 0 006 6l1.4-1.4a2 2 0 012.1-.4c.9.3 1.8.5 2.7.6a2 2 0 011.8 2.2z"/></svg>
+  </a>
+</div>
+<button class="to-top" id="toTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<!-- ================= CART DRAWER ================= -->
+<div class="overlay" id="overlay" onclick="closeAllPanels()"></div>
+<div class="drawer" id="cartDrawer">
+  <div class="drawer-head">
+    <h3 data-en="Your Bag">سلة التسوق</h3>
+    <button class="icon-btn" onclick="toggleCart()">✕</button>
+  </div>
+  <div class="drawer-body" id="cartBody"></div>
+  <div class="drawer-foot" id="cartFoot" style="display:none;">
+    <div class="row"><span data-en="Subtotal">الإجمالي</span><span id="cartTotal">0 ر.س</span></div>
+    <button class="btn btn-primary" style="width:100%; justify-content:center;" onclick="showToast(lang==='ar'?'الدفع يتطلب ربط بوابة دفع فعلية':'Checkout requires a real payment gateway integration')" data-en="Checkout">إتمام الشراء</button>
+  </div>
+</div>
+
+<div class="drawer" id="wishDrawer" style="right:auto; left:-420px;">
+  <div class="drawer-head">
+    <h3 data-en="Wishlist">المفضلة</h3>
+    <button class="icon-btn" onclick="toggleWishPanel()">✕</button>
+  </div>
+  <div class="drawer-body" id="wishBody"></div>
+</div>
+
+<!-- ================= QUICK VIEW MODAL ================= -->
+<div class="modal-overlay" id="quickModal" onclick="if(event.target===this) closeQuickView()">
+  <div class="modal" style="position:relative;" id="modalContent"></div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
